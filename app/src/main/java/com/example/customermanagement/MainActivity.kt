@@ -1,10 +1,6 @@
 package com.example.customermanagement
 
-
 import android.os.Bundle
-
-
-
 import android.content.ContentValues
 import android.content.Context
 import android.database.sqlite.SQLiteDatabase
