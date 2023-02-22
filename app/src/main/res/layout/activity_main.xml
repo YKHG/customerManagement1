@@ -1,92 +1,80 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp">
+    tools:context=".MainActivity">
 
     <EditText
-        android:id="@+id/editTextId"
+        android:id="@+id/nameEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="ID (6 digits)"
-        android:inputType="number"
-        android:maxLines="1"
-        android:minHeight="48dp"
-        android:autofillHints="" />
+        android:hint="Name" />
 
     <EditText
-        android:id="@+id/editTextName"
+        android:id="@+id/emailEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:hint="Name"
-        android:inputType="textPersonName"
-        android:maxLines="1"
-        android:minHeight="48dp"
-        android:autofillHints="" />
-
-    <EditText
-        android:id="@+id/editTextEmail"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
         android:hint="Email"
-        android:inputType="textEmailAddress"
-        android:maxLines="1"
         android:minHeight="48dp" />
 
     <EditText
-        android:id="@+id/editTextMobile"
+        android:id="@+id/mobileEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
         android:hint="Mobile"
-        android:inputType="phone"
-        android:maxLines="1"
         android:minHeight="48dp" />
 
     <Button
-        android:id="@+id/buttonAdd"
+        android:id="@+id/insertButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Insert" />
+
+    <EditText
+        android:id="@+id/idEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Add Customer" />
+        android:hint="ID"
+        android:minHeight="48dp" />
 
     <Button
-        android:id="@+id/buttonSearch"
+        android:id="@+id/deleteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete" />
+
+    <EditText
+        android:id="@+id/searchNameEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Search Customer" />
+        android:hint="Search Name"
+        android:minHeight="48dp" />
 
     <Button
-        android:id="@+id/buttonUpdate"
-        android:layout_width="match_parent"
+        android:id="@+id/searchButton"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Update Customer" />
+        android:text="Search" />
 
     <Button
-        android:id="@+id/buttonDelete"
-        android:layout_width="match_parent"
+        android:id="@+id/showAllButton"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Delete Customer" />
+        android:text="Show All" />
 
     <Button
-        android:id="@+id/buttonShowAll"
-        android:layout_width="match_parent"
+        android:id="@+id/resetButton"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Show All Customers" />
+        android:text="Reset" />
 
-    <TextView
-        android:id="@+id/textViewResult"
-        android:layout_width="match_parent"
+    <Button
+        android:id="@+id/updateButton"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Results"
-        android:textSize="18sp" />
+        android:text="Update" />
 
 </LinearLayout>
